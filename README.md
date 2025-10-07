@@ -189,8 +189,16 @@
         import { getFirestore, doc, setDoc, getDoc, onSnapshot, updateDoc, arrayUnion, arrayRemove, setLogLevel } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
         // --- CONFIGURAÇÃO E INICIALIZAÇÃO ---
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : { apiKey: "DEMO", authDomain: "DEMO", projectId: "DEMO" };
-        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+        const firebaseConfig = {
+          apiKey: "AIzaSyBh866AyAWcFBxQ5Lxij8pBz43KrQoydEA",
+          authDomain: "inclusao-4d763.firebaseapp.com",
+          projectId: "inclusao-4d763",
+          storageBucket: "inclusao-4d763.appspot.com",
+          messagingSenderId: "659733821935",
+          appId: "1:659733821935:web:20029eca7032d841b95e1a",
+          measurementId: "G-RW483FFWF1"
+        };
+        const appId = "diretoria-inclusao-app"; // Pode ser um ID único para a aplicação
         
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
